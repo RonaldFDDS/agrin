@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Conexão campo-cidade</title>
+  </head>
+  <body>
+    <button class="btn btn-secondary toggle-theme-btn" onclick="toggleDarkMode()">Modo Escuro</button>
+
+    <div class="centralizado">
+      <header class="container text-center mb-5">
+        <h1>Conexão campo-cidade</h1>
+        <p>
+            O transporte de produtos agrícolas do campo para os centros urbanos é essencial para garantir o abastecimento das cidades. No Brasil, o transporte rodoviário é o mais utilizado nesse processo, devido à grande quantidade de estradas que conectam o campo a cidade, mas o combustível é caro. O transporte ferroviário é uma alternativa eficiente, especialmente para grandes volumes e longas distâncias.
+        </p>
+      </header>
+
+      <main class="container text-center mb-5">
+        <h2 class="mb-4">Transportes</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/trem.webp" class="card-img-top" alt="Projeto 1" />
+              <div class="card-body">
+                <h5 class="card-title">Transporte Ferroviário</h5>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto">
+                  Ver mais
+                </button>
+                <div class="modal fade" id="modalProjeto" tabindex="-1" aria-labelledby="modalProjetoLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalProjetoLabel">Transporte Ferroviário</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>O transporte ferroviário é muito utilizado para a carga de grandes quantidades de produtos agrícolas, especialmente grãos como soja, milho e trigo. Embora menos presente em áreas rurais pequenas, ele é muito eficiente em rotas de longa distância, ligando regiões produtoras a portos e grandes centros de distribuição. Os trens têm alta capacidade de carga, baixo custo por tonelada transportada e menor impacto ambiental em comparação com os caminhões. Apesar dessas vantagens, o transporte ferroviário ainda é limitado pela falta de investimento e pela pequena malha ferroviária em muitas regiões do Brasil, o que dificulta seu uso mais amplo no transporte direto entre o campo e a cidade.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/caminhao.jpeg" class="card-img-top" alt="Projeto 3" />
+              <div class="card-body">
+                <h5 class="card-title">Transporte Rodoviário:</h5>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProjeto1">
+                  Ver mais
+                </button>
+                <div class="modal fade" id="modalProjeto1" tabindex="-1" aria-labelledby="modalProjeto1Label" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalProjetoLabel">Transporte Rodoviário</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>O transporte rodoviário é o principal meio utilizado para levar produtos do campo até os centros urbanos no Brasil. Caminhões percorrem diariamente estradas e rodovias, transportando alimentos como frutas, verduras, leite, carnes e grãos diretamente das propriedades rurais para mercados, feiras e supermercados. Esse tipo de transporte é vantajoso por sua flexibilidade e capacidade de alcançar áreas remotas, onde outros meios de transporte não chegam. No entanto, ele enfrenta desafios como estradas em más condições, congestionamentos e altos custos operacionais, o que pode impactar o preço final dos produtos e sua qualidade ao chegar ao consumidor.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="java.js"></script>
+        <div class="carousel">
+  <button class="prev">&#10094;</button>
+  <img id="carousel-image" src="img/tremzao.jpg" alt="Imagem do carrossel">
+  <button class="next">&#10095;</button>
+</div>
+
+      </main>
+
+      <footer class="container text-center py-5 border-top">
+        <p class="text-muted">&copy; Copyright 2025. Produzido por Ronald</p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+      }
+    </script>
+  </body>
+</html>
